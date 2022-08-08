@@ -6,4 +6,5 @@ ReactDOM.render(
   <React.StrictMode>
     <TodoContainer />
   </React.StrictMode>,
-  document.getElementById('root'));
+  document.getElementById('root')
+);
