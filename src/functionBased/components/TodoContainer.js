@@ -4,8 +4,9 @@ import Header from './Header';
 import InputTodo from './InputTodo';
 import {v4 as uuidv4} from 'uuid';
 import { Routes, Route, Switch } from 'react-router-dom';
-import About from "../pages/About"
-import NotMatch from "../pages/NotMatch"
+import About from "../pages/About";
+import NotMatch from "../pages/NotMatch";
+import Navbar from './Navbar';
 
 const TodoContainer = () => {
   function getInitialTodos() {
@@ -73,6 +74,7 @@ const TodoContainer = () => {
   
   return (
     <>
+      <Navbar />
       <Routes>
         <Route exact path='/' element={
           <div className='container'>
