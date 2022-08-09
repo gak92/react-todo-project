@@ -1,6 +1,10 @@
-import React from "react"
+import React from "react";
+import { useMatch } from "react-router-dom";
 
-const About = () => {
+
+const About = (props) => {
+  
+  console.log(useMatch);
   return <div>hello from about page</div>
 }
 export default About
